@@ -21,10 +21,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 <!-- HTML form for registration -->
-<form method="POST">
-    <input type="text" name="username" placeholder="Username" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="text" name="full_name" placeholder="Full Name" required>
+<form method="POST" action="process_register.php">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
     <button type="submit">Register</button>
 </form>
+
