@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'pkl_sarastya';
 $username = 'postgres';
-$password = 'passwordAnda';
+$password = 'syabil008';
 
 try {
     $pdo = new PDO("pgsql:host=$host;dbname=$dbname", $username, $password);
